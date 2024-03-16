@@ -82,8 +82,8 @@ else()
 endif()
 
 target_include_directories(rapidcheck PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
-    $<INSTALL_INTERFACE:include>  # <prefix>/include
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include/>
+    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>  # <prefix>/include
 )
 
 include(GNUInstallDirs)
